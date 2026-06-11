@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="Description" content="Research Page, Project Page">
+    <meta name="Keyworks" content="Research, Project, Web Development">
+    <meta name="Author" content="Phoenix Andrews">
+    
+    <title> Research Page</title>
+    
+
+    </head>
+    <body>
+        <header>
+            <h1>Research Project</h1>
+            <h2 class="name">Phoenix Andrews</h2>
+            <nav>
+                <ul>
+                    <li><a href="#selection"> Page Selection</a></li>
+                    <li><a href="#major"> Major Sections</a></li>
+                    <li><a href="#heading">Headings</a></li>
+                    <li><a href="#list">Lists</a></li>
+                    <li><a href="#link">Link Analysis</a></li>
+                    <li><a href="#table">Table</a></li>
+                    <li><a href="#review">Accessibility Review</a></li>
+                    <li><a href="#valid">HTML Validation</a></li>
+                    <li><a href="#end">Summary</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="selection">
+                <h2><a href="https://cfpca.wayne.edu/art/design/fashion-design">College of Fine, Performing and Communication Arts-Fashion Design</a></h2>
+                <p>My criteria for choosing which page I would review was simple, it needed to at least minimally fit the listed criteria and for it to be a program I did not know much about. This page fits both of those wonderfully, it hits all the listed criteria multiple times over and was a program I did not even know we offered. There is only one section that Is a little strange but that will be covered in Link Analysis.</p>
+            </section>
+            <section id="major">
+                <h2> Major Sections</h2>
+                    <h3>Site Header</h3>
+                        <img src="images/header.png" alt="Header of webpage">
+                        <p>This should be marked with the header element. This is the topmost section of the page. The site dev agrees also marking it header.</p>
+                    <h3>Sidebar Navigator</h3>
+                        <img src="images/nav.png" alt="Webpage menu navigator">
+                        <p>This should be marked with the nav element. Its primary function is to navigate you across the greater webpage. The site dev agrees also marking it nav.</p>
+                    <h3>Primary Content</h3>
+                        <img src="images/Main section.png" alt="Main section of webpage">
+                        <img src="images/spotlight.png" alt="Degree Spotlight">
+                        <img src="images/student work gallery.png" alt="Examples of student work">
+                        <p>I would have used sections on each of these sections (separated by screenshot) separately. My thought being that while they are all a part of the main, they are each contributing different things to those larger sections and thus should be separated. The site devs instead use div ids and classes to separate these up under the larger main section. </p>
+                    <h3>Footer</h3>
+                        <img src="images/footer.png" alt="Footer of webpage">
+            </section>
+            <section id="heading">
+                <h2>Headings</h2>
+                <ul>
+                    <li>Fashion Design- H1, this is the first header of the main content.</li>
+                    <ul>
+                        <li>The Fashion Design used for the nav section mentioned previously looks like a small heading but is just bold, most likely to represent that being the active page</li>
+                    </ul>
+                    <li>Career opportunities, Facilitites (incorrectly spelled), Resources, Organizations Student work gallery, Spotlight, Contact, James Pearson Duffy Department of Art, Art History, and Design- H2, these are all subsections of the main content (or apart of the footer) thus taking a step down in size </li>
+                    <li>Molly Broekman, Madelaine Corbin, Daynah Grant-H3, these are all subsections of Spotlight (mentioned above) that contain their own subtext and links. </li>
+                </ul>
+            </section>
+            <section id="list">
+                <h2>Lists</h2>
+                 <img src="images/list.png" alt="list of items available">
+                 <ul>
+                    <li>This should be an unordered list, and it consists of links</li>
+                    <img src="images/nav.png" alt="Webpage menu navigator">
+                    <li>this should be an unordered list, and it consists of plain text</li>
+                    <img src="images/list.png" alt="list of items available">
+                 </ul>
+            </section>
+            <section id="link">
+                <h2>Link Analysis</h2>
+                <p>Technically speaking there are no fully external links on this page that are currently functional, or at least functional for me. The link is supposed to open with the “Dorothea June Grossbart Historic Costume Collection” text sends me to a forbidden webpage error that is intact not an internal site. However, when I look in the source code it shows an internal link to the library. Every other link on this page is an internal link; some are just absolute while others are relative</p>
+                <p>Absolute links (the text that appears on the webpage)- Fashion Design and Merchandising Organization, Molly Broekman, Madelaine Corbin, Daynah Grant, Facebook, Instagram, LinkedIn, Map, Privacy and University Policies, Wayne State Univeristy</p>
+                <p>Relative Links (the text that appears on the webpage)- Fashion Design, Graphic Design, Industrial Design, Interior Design, Fashion Merchandising, Fine Arts, Design, Art History, Core Studio, Degree Programs, Faculty, Galleries, About</p>
+            </section>
+            <section id="table">
+                <h2>Table</h2>
+                <p>There were no tables :C</p>
+            </section>
+            <section id="review">
+                <h2> <a href="https://wave.webaim.org/report#/https://cfpca.wayne.edu/art/design/fashion-design"> Accessibility Review</a> </h2>
+                <img src="images/access report.png" alt="Report of webpage accessibility">
+                <p>Zero errors, two alerts (redundant link and noscript element). All images have alt text. Fixing the link (mentioned previously) would be my only accessibility change that needs addressing.</p>
+            </section>
+            <section id="valid">
+                <h2> <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fcfpca.wayne.edu%2Fart%2Fdesign%2Ffashion-design"> Validation </a></h2>
+                <img src="images/html errors.png" alt="HTML error reports">
+                <p>One error and six infos. The error is about the aria hidden attribute being use in the noscript element. This is an issue and they should never be used together because at best its redundant and at worst it causes accessibility issues. All of the infos are about trailing slashes.</p>
+            </section>
+            <section id="End">
+                <h2>Summary</h2>
+                <p>Generally speaking, I think the webpage was fairly well structured with only minor changes that it really should make. Most other notes are things I would have done instead but that doesn’t mean the way it was done was wrong. The things that need to be done would be the broken link, the HTML error and the spelling mistake. A change I would make would be to alter the section structure of the main content.</p>
+            </section>            
+        </main>
+        <footer>
+            <p><a href="index.html"> Index Page</a></p>
+            <p class="date">6/11/2026</p>
+        </footer>
+    </body>
