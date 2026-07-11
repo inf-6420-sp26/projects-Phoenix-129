@@ -118,7 +118,7 @@ main{
     background-color: #829E5D;
 }
 @media (max-width: 768px) {
-  .grid-container {
+  .complex-grid {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(7, auto)
   }
