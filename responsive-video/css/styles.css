@@ -1,0 +1,156 @@
+*{
+   
+    margin: 0px;
+    padding: 0px;
+}
+.main-con{
+    width: 1175px;
+    margin: 0 auto;
+}
+.vid-con{
+    width: 800px;
+    margin: 0 auto;
+}
+.video{
+    max-width: 800px;
+    height: auto;
+}
+.text-con{
+  display: flex;
+  gap: 40px;  
+}
+.comment-img{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.comment-txt{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+a {
+    text-decoration: none; 
+    color: green;        
+}
+nav a {
+  transition: outline 0.2s ease;
+  border-radius: 4px;
+}
+nav a:hover,
+nav a:focus-visible {
+  background-color: #f0f4f8;
+  color: #0066cc;
+}
+.gallery-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 24px;
+    padding: 24px;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+}
+.card {
+    grid-column: span 1;
+    background-color: antiquewhite;
+    width: 100%;
+    max-width: 200px;
+    border-radius: 10px;
+    outline: 3px solid #200341;
+    overflow: hidden;
+}
+.img-con{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+.card-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card-text{
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+ul{
+    list-style: none;      
+  padding: 0;            
+  margin: 0;            
+  display: flex;        
+  gap: 130px;  
+}
+.heading {
+    font-size: 50px;
+    color: darkgreen;
+}
+header{
+    border-bottom: 2px solid gray;
+}
+body{
+    background-color: #eaeccd;
+}
+@media (max-width: 1000px) and (min-width:700px){
+  .main-con{
+    width: 90%;
+    margin: 0 auto;
+}
+.vid-con{
+    width: 70%;
+    margin: 0 auto;
+}
+.video{
+    max-width: 70%;
+    height: auto;
+}  
+ul{
+    list-style: none;      
+  padding: 0;            
+  margin: 0;            
+  display: flex;        
+  gap: 50px;  
+}
+.gallery-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+}
+}
+@media (max-width: 700px){
+  .main-con{
+    width: 90%;
+    margin: 0 auto;
+}
+.vid-con{
+    width: 70%;
+    margin: 0 auto;
+}
+.video{
+    max-width: 70%;
+    height: auto;
+}  
+ul{
+    list-style: none;      
+  padding: 0;            
+  margin: 0;            
+  display: flex;        
+  gap: 25px;  
+}
+.gallery-grid{
+    display: grid;
+    grid-template-columns:  1fr;
+    grid-template-rows: auto;
+    gap: 5px;
+    padding: 5px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.card{
+    max-width: none;
+}
+}
